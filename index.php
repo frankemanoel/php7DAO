@@ -30,15 +30,20 @@
 	//$aluno->insert();
 	//echo $aluno;
 
+	//Alterar um usuario
+/*
 	$usuario = new Usuario();
-
 	$usuario->loadByID(8);
-
 	$usuario->update("professor", "159753");
-
 	echo $usuario;
-
 	echo "Dados alterados com sucesso!";
+*/
 
+
+	//exclui um usuario pelo ID
+	$usuario = new Usuario();
+	$usuario->loadByID(4);
+	$usuario->delete();
+	echo $usuario;
 
 		?>
