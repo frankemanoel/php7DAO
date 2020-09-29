@@ -21,7 +21,24 @@
 	//echo json_encode($search);
 
 	//carrega um usuario usando o login e a senha
+	//$usuario = new Usuario();
+	//$usuario->login("root", "Hoje");
+	//echo $usuario;
+
+	//criando um novo usuario
+	//$aluno = new Usuario("aluno", "senha");
+	//$aluno->insert();
+	//echo $aluno;
+
 	$usuario = new Usuario();
-	$usuario->login("root", "Hoje");
+
+	$usuario->loadByID(8);
+
+	$usuario->update("professor", "159753");
+
 	echo $usuario;
- ?>
+
+	echo "Dados alterados com sucesso!";
+
+
+		?>
